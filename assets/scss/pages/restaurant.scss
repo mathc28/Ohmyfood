@@ -1,0 +1,206 @@
+@import '../base/base.scss';
+
+.center-menu {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.restoname-heart {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.menu-restaurant {
+	width: 100%;
+	height: 100%;
+	background: #F6F6F6;
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: -50px;
+}
+
+.menu-resto-name {
+	font-family: Shrikhand;
+	font-size: 28px;
+	font-style: italic;
+	font-weight: 700;
+	line-height: 41px;
+	letter-spacing: 0em;
+	text-align: left;
+}
+
+.heart-resto {
+	margin-left: 100px;
+}
+
+.menu-entree {
+	font-family: $main-font-family;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 19px;
+	letter-spacing: 0em;
+	text-align: left;
+	font-style: unset;
+	position: relative;
+	&::before {
+		content: '';
+		width: 40px;
+		height: 3px;
+		background: #99E2D0;
+		position: absolute;
+		bottom: -5px;
+		left: 0;
+	}
+}
+
+.menu {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.menu-btn {
+	width: 349px;
+	height: 69px;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	justify-content: space-between;
+	box-shadow: 0px 4.011494159698486px 15.043103218078613px 0px #0000001A;
+	margin-bottom: 12px;
+	margin-right: 0px;
+	border-radius: 15px;
+	border: none;
+	background-color: white;
+	padding: 0px 0px 0px 15px;
+	position: relative;
+	overflow: hidden;
+}
+
+.last-btn {
+	margin-bottom: 25px;
+}
+
+.plat-title {
+	font-family: $main-font-family;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 21px;
+	letter-spacing: 0em;
+	text-align: left;
+	margin-bottom: 5px;
+	margin-top: 10px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	transition: linear .3s;
+	width: 220px;
+}
+
+.plat-description {
+	width: 100%;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	transition: linear .3s;
+}
+
+.plat-subtitle {
+	font-family: $main-font-family;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 18px;
+	letter-spacing: 0em;
+	text-align: left;
+	margin: 0px 0px 12px 0px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	transition: linear .3s;
+}
+
+.plat-prix {
+	display: flex;
+	margin: 0px 15px 12px 0px;
+	font-family: $main-font-family;
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 18px;
+	letter-spacing: 0em;
+	text-align: center;
+}
+
+.price-check {
+	display: flex;
+	flex-direction: row;
+	align-items: end;
+}
+
+.green-check {
+	position: absolute;
+	width: 59px;
+	height: 69px;
+	background: #99E2D0;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	right: -59px;
+	.i {
+		width: 30px;
+		height: 30px;
+	}
+}
+
+.check-color {
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.btn-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/*  PAGES RESTAURANTSS Small devices (phones, less than 1020px) */
+@media all and (min-width: 1020px) {
+
+    .menu-btn {
+        width: 634px;
+    }
+
+}
+
+/*  PAGES RESTAURANTSS Small devices (phones, less than 768px) */
+@media all and (min-width: 767.98px) {
+    /* ... */
+
+    .menu-restaurant {
+        width: 74%;
+    }
+
+	.heart-resto {
+        margin-left: 35px;
+    }
+
+    .menu-btn {
+        width: 490px;
+    }
+
+	.menu-btn:hover .plat-description .plat-subtitle {
+        width: 300px;
+    }
+
+}

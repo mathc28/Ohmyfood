@@ -1,0 +1,77 @@
+
+
+/****** footer ***********/
+
+.footer {
+	background: #353535;
+}
+.mini-logo {
+	width: 137px;
+	height: 27px;
+	margin: 22px 0px 16px 15px;
+	path {
+		fill: white;
+	}
+}
+.clean-link {
+	list-style-type: none;
+	margin-left: 22px;
+	padding-bottom: 7px;
+}
+.footer-link {
+	&:hover {
+		cursor: pointer;
+		text-decoration: underline;
+	}
+	text-decoration: none;
+	color: white;
+}
+.icon-footer {
+	width: 11px;
+	height: 13px;
+	color: white;
+	padding-right: 11px;
+}
+.last-link {
+	padding-bottom: 22px;
+}
+
+
+/* Small devices (phones, less than 768px) */
+@media all and (min-width: 768px) {
+    /* ... */
+
+    .footer {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: flex-start;
+        height: 114px;
+    }
+
+    .clean-link {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 0px;
+        margin-top: 25px;
+    }
+
+    .mini-logo {
+        margin: 35px 25px 0px 55px;
+
+    }
+
+    .last-link {
+        padding-bottom: 0px;
+    }
+
+    .footer-style {
+        margin-right: 35px;
+    }
+
+    .footer-link {
+        font-size: 14px;
+    }
+}

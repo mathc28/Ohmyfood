@@ -1,0 +1,135 @@
+@import '../base/base.scss';
+
+.fonctionnement {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 440px;
+}
+.fonctionnement-title {
+	font-size: 24px;
+	width: calc(100% - 25px);
+	align-items: flex-start;
+	margin: 45px 0px 25px 20px;
+}
+.fonctionnement-btn {
+	width: calc(100% - 50px);
+	height: 72px;
+	border-radius: 20px;
+	font-weight: 500;
+	font-size: 16px;
+	background-color: $main-background-color;
+	border: none;
+	box-shadow: 0px 4px 15px 0px #00000026;
+	&:hover {
+		.icon-color {
+			color: #9356DC;
+		}
+	}
+}
+.btn-number {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+.space-btn {
+	padding-bottom: 25px;
+}
+.fonctionnement-number {
+	background: #9356DC;
+	border-radius: 25px;
+	width: 24px;
+	height: 24px;
+	color: white;
+	font-size: 14px;
+	font-weight: 500px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	margin-right: -11px;
+	top: 9px;
+	left: 12px;
+	margin-top: 20px;
+	position: absolute;
+}
+.icon-color {
+	color: #7E7E7E;
+}
+.icon-phone {
+	height: 20px;
+	width: 13px;
+	margin-right: 20px;
+}
+.icon-list {
+	height: 16px;
+	width: 16px;
+	margin-right: 23px;
+}
+.icon-shop {
+	height: 18px;
+	width: 18px;
+	margin-right: 20px;
+}
+.list-restaurant {
+	background-color: $main-background-color;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.restaurant-title {
+	font-size: 24px;
+	font-weight: 700;
+	padding-top: 48px;
+	margin-bottom: 20px;
+	margin-left: 25px;
+	margin-top: 0px;
+	width: calc(100% - 20px);
+}
+
+/* Small devices (phones, less than 1020px) */
+@media all and (min-width: 1019.98px) {
+    /* ... */
+
+    .fonctionnement {
+        height: 230px;
+    }
+
+    .fonctionnement-title {
+        margin: 50px 0px 25px 130px;
+        padding: 0px;
+    }
+
+	.restaurant-title {
+		margin: 50px 0px 25px 130px;
+        padding: 0px;
+	}
+
+    .fonctionnement-btn {
+        width: 322px;
+        height: 72px;
+    }
+
+    .fonctionnement-number {
+        left: -12px;
+    }
+
+	.line-btn {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .card {
+        width: 490px;
+    }
+
+    .recherche-title {
+        margin-left: 130px;
+    }
+}
