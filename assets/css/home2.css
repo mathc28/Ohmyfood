@@ -468,6 +468,10 @@ template {
   padding-bottom: 7px;
 }
 
+ul{
+  padding-inline-start: 0px;
+}
+
 .footer-link {
   text-decoration: none;
   color: white;
