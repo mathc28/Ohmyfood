@@ -71,7 +71,7 @@
 /****** animations affichage restaurant sur la homepage ***********/
 
 .card {
-    animation: swipeLeft 1s ease-out forwards;
+    animation: swipeUp 1s ease-out forwards;
     opacity: 0;
 }
 
@@ -88,7 +88,7 @@
     animation-delay: 1s;
 }
 
-@keyframes swipeLeft {
+@keyframes swipeUp {
     0% {
         transform: translateY(100px);
         opacity: 0;

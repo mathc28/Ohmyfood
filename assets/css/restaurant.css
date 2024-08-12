@@ -461,6 +461,10 @@ template {
   fill: white;
 }
 
+ul{
+  padding-inline-start: 0px;
+} 
+
 .clean-link {
   list-style-type: none;
   margin-left: 22px;
@@ -893,6 +897,12 @@ input[type=checkbox]:checked ~ label .heart-clip::before {
 }
 /****** animations green check/ page restaurant ***********/
 .menu-btn:hover .price-check {
+  transform: translateX(-59px);
+  transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
+  opacity: 1;
+}
+
+.menu-btn:hover + .plat-prix + .green-check {
   transform: translateX(-59px);
   transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
   opacity: 1;

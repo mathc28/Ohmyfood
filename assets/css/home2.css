@@ -495,7 +495,7 @@ ul{
   width: 11px;
   height: 13px;
   color: white;
-  padding-right: 11px;
+  margin-right: 11px;
 }
 
 .last-link {
@@ -912,7 +912,7 @@ input[type=checkbox]:checked ~ label .heart-clip::before {
   animation-delay: 2.5s;
 }
 
-@keyframes swipeLeft {
+@keyframes swipeUp {
   0% {
     transform: translateY(100px);
     opacity: 0;
