@@ -240,23 +240,14 @@ input[type="checkbox"]:checked ~ label .heart-clip::before{
 
 /****** animations green check/ page restaurant ***********/
 
-.menu-btn:hover .price-check{
-    transform: translateX(-59px);
-    transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
-
-    opacity: 1;
-}
-
-.menu-btn:hover .plat-description .plat-subtitle{
-    width: 220px;
-}
-
-.menu-btn:hover + .plat-prix + .green-check {
-    transform: translateX(-59px);
+.menu-btn:hover + .price-check + .plat-prix + .green-check {
+    transform: translateX(var(-59px));
     transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
     opacity: 1;
-}
-
+  }
+  .menu-btn:hover .plat-description .plat-subtitle {
+    width: 200px;
+  }
 
 /*** animations boutons commander / page restaurant ***/ 
 

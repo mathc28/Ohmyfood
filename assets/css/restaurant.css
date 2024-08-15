@@ -2,22 +2,16 @@
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
-/**
- * 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in iOS.
- */
-html {
-  line-height: 1.15; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
-}
 
-/* Sections
-   ========================================================================== */
-/**
- * Remove the margin in all browsers.
- */
-body {
-  margin: 0;
+html, body {
+  margin:0;
+  margin-bottom: -16px;
+  padding:0;
+
+  font-family: 'Roboto', sans-serif;
+
+  width: 100%;
+  max-width: 100%;
 }
 
 /**
@@ -905,31 +899,21 @@ input[type=checkbox]:checked ~ label .heart-clip::before {
   }
 }
 /****** animations green check/ page restaurant ***********/
-.menu-btn:hover .price-check {
-  transform: translateX(-59px);
-  transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
-  opacity: 1;
-}
-
+.menu-btn:hover .price-check,
 .menu-btn:hover + .plat-prix + .green-check {
-  transform: translateX(-59px);
-  transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
-  opacity: 1;
+    transform: translateX(-59px);
+    transition: transform 0.4s ease-in-out,
+                width 0.4s ease-in-out,
+                opacity 0.4s ease-in-out;
+    opacity: 1;
 }
-
-.menu-btn:hover .plat-description .plat-subtitle {
-  width: 220px;
+.menu-btn:hover .plat-description {
+  width: 200px;
 }
 
 /*** animations boutons commander / page restaurant ***/
 .btn-order:hover {
   background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%), linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
-}
-
-.menu-btn:hover + .plat-prix + .green-check {
-  transform: translateX(-59px);
-  transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
-  opacity: 1;
 }
 
 /****** media querries / homepage ***********/
@@ -948,14 +932,6 @@ input[type=checkbox]:checked ~ label .heart-clip::before {
 /*  PAGES RESTAURANTSS Small devices (phones, less than 768px) */
 @media all and (min-width: 767.98px) {
   /* ... */
-}
-html, body {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: "Roboto", sans-serif;
-  width: 100%;
-  max-width: 100%;
 }
 
 .center-menu {
