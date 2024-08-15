@@ -521,6 +521,15 @@ ul{
   .footer-link {
     font-size: 14px;
   }
+
+  .links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 0px;
+    margin-top: 25px;
+}
 }
 /****** home page ***********/
 /****** header ***********/
