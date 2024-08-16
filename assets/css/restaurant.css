@@ -885,9 +885,13 @@ input[type=checkbox]:checked ~ label .heart-clip::before {
                 opacity 0.4s ease-in-out;
     opacity: 1;
 }
-.menu-btn:hover .plat-description {
-  width: 200px;
-} 
+
+
+@media all and (max-width: 768px) {
+  .menu-btn:hover .plat-description {
+    width: 200px;
+  } 
+}
 
 /*** animations boutons commander / page restaurant ***/
 .btn-order:hover {
