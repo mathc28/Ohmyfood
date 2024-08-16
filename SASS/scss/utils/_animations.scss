@@ -243,7 +243,6 @@ input[type="checkbox"]:checked ~ label .heart-clip::before{
 .menu-btn:hover .price-check {
     transform: translateX(-59px);
     transition: transform 0.4s ease-in-out,
-                width 0.4s ease-in-out,
                 opacity 0.4s ease-in-out;
     opacity: 1;
 }
